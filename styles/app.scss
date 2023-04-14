@@ -5,7 +5,11 @@ $rosy-brown: #b38d97ff;
 $tea-green: #c8d6afff;
 $coral: #f78154ff;
 
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+// @ url("/fonts/BreeSerif-Regular.ttf");
+@font-face {
+  font-family: "Bree Serif";
+  src: url("bree-serif.ttf") format("truetype");
+}
 
 body,
 html {
