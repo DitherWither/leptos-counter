@@ -7,15 +7,22 @@ fn App(cx: Scope) -> impl IntoView {
         cx,
         <h1>"Counter"</h1>
 
-        <button on:click=move |_| set_count.update(|count| *count += 1)>
-            "+"
-        </button>
-        
-        <p>{count}</p>
-
-        <button on:click=move |_| set_count.update(|count| *count -= 1)>
-            "-"
-        </button>
+        <div class="hcenter vcenter">
+            <div class="margin-bottom-2">
+                <button on:click=move |_| set_count.update(|count| *count += 1) class="counter-btn">
+                    "+"
+                </button>
+            
+                <p class="counter-text">{count}</p>
+            
+                <button on:click=move |_| set_count.update(|count| *count -= 1) class="counter-btn">
+                    "-"
+                </button>
+            </div>
+            <button on:click=move |_| set_count.set(0) class="btn-secondary">
+            "Reset"
+            </button>
+        </div>
     }
 }
 

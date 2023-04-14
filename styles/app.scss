@@ -1,0 +1,68 @@
+// Color Pallete from https://coolors.co/a020f0-290628-b38d97-c8d6af-f78154
+$veronica: #a020f0ff;
+$dark-purple: #290628ff;
+$rosy-brown: #b38d97ff;
+$tea-green: #c8d6afff;
+$coral: #f78154ff;
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $tea-green;
+  font-size: 1.5rem;
+  color: $dark-purple;
+
+  font-family: "Bree Serif", serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+button {
+  background-color: $veronica;
+  color: $tea-green;
+
+  border: 0px;
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.btn-secondary {
+  background-color: $coral;
+  color: $dark-purple;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+
+.hcenter {
+  text-align: center;
+}
+
+.vcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.counter-text {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.counter-btn {
+  font-size: 2rem;
+}
