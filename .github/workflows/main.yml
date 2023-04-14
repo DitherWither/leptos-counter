@@ -10,6 +10,11 @@ jobs:
       pages: write
     steps:
       - uses: Swatinem/rust-cache@v2
+      
+      
+      - name: Set default toolchain to nightly
+        run: rustup default nightly
+      
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: nightly
